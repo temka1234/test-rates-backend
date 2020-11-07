@@ -40,15 +40,15 @@ public class RatesParserService {
 	@Autowired
 	ParserHistoryRepository historyRepository;
 	
-    @Autowired
-    private PlatformTransactionManager transactionManager;
+	@Autowired
+	private PlatformTransactionManager transactionManager;
 	
-    @Autowired 
-    private EntityManager entityManager;
-    
+	@Autowired 
+	private EntityManager entityManager;
+	
 	@Value("${parser.source.url}")
 	private String sourceUrl;
-	
+
 	public RatesParserService() {
 	}
 	
