@@ -2,7 +2,7 @@
 
 Backend of testing task for rates exchange
 
-## Task
+## Task description
 
 Implement a page with the dynamics of the dollar and euro exchange rates for the last month.  
 There should be 2 tabs on the page: one with a table, the other with a chart.  
