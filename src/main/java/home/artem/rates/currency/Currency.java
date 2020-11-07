@@ -9,10 +9,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Currency {
-	@Id
-	String numberCode;
-	String letterCode;
-	String title;
+  @Id String numberCode;
+  String letterCode;
+  String title;
 }

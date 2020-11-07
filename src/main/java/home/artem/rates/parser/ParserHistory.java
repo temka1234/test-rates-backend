@@ -11,9 +11,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class ParserHistory {
-	@Id
-	private LocalDate date;
-	private Integer count;
+  @Id private LocalDate date;
+  private Integer count;
 }

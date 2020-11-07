@@ -17,23 +17,25 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter @Setter @NoArgsConstructor
-@Table(uniqueConstraints={
-    @UniqueConstraint(columnNames = { "fromCurrencyId", "toCurrencyId", "date" })
-}) 
+@Getter
+@Setter
+@NoArgsConstructor
+@Table(
+    uniqueConstraints = {
+      @UniqueConstraint(columnNames = {"fromCurrencyId", "toCurrencyId", "date"})
+    })
 public class CurrencyRate {
-	@Id @GeneratedValue
-	private Long id;
-	
-	private LocalDate date;
-	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "fromCurrencyId")
-	private Currency fromCurrency;
-	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "toCurrencyId")
-	private Currency toCurrency;
-	
-	private Double value;
+  @Id @GeneratedValue private Long id;
+
+  private LocalDate date;
+
+  @ManyToOne(cascade = CascadeType.ALL)
+  @JoinColumn(name = "fromCurrencyId")
+  private Currency fromCurrency;
+
+  @ManyToOne(cascade = CascadeType.ALL)
+  @JoinColumn(name = "toCurrencyId")
+  private Currency toCurrency;
+
+  private Double value;
 }
