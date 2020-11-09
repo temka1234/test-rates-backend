@@ -2,6 +2,9 @@
 
 Backend of testing task for rates exchange
 
+[Backend (Java Spring)](https://github.com/temka1234/test-rates-frontend)  
+[Frontend (Angular)](https://github.com/temka1234/test-rates-backend)  
+
 ## Task description
 
 Implement a page with the dynamics of the dollar and euro exchange rates for the last month.  
