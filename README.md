@@ -2,8 +2,8 @@
 
 Backend of testing task for rates exchange
 
-[Backend (Java Spring)](https://github.com/temka1234/test-rates-frontend)  
-[Frontend (Angular)](https://github.com/temka1234/test-rates-backend)  
+[Backend (Java Spring)](https://github.com/temka1234/test-rates-backend)  
+[Frontend (Angular)](https://github.com/temka1234/test-rates-frontend)  
 
 ## Task description
 
